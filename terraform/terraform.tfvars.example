@@ -1,0 +1,17 @@
+# Copy this file to terraform.tfvars and fill in your values.
+# Never commit terraform.tfvars to source control — it is in .gitignore.
+
+tenant_id           = "842815c6-ed3c-472f-bd91-f3513f0be860"
+subscription_id     = "7b593257-c947-47d1-9495-fbb26d174404"
+resource_group_name = "rg-domain-portal"
+location            = "eastus2"
+swa_location        = "eastus2"
+storage_account_name = "stdomainportal0001"   # must be globally unique
+static_web_app_name  = "swa-domain-portal"
+custom_domain        = "auth.maxdevindustries.com"                      # e.g. "portal.yourcompany.com"
+
+tags = {
+  Environment = "Production"
+  Project     = "DomainPortal"
+  ManagedBy   = "Terraform"
+}

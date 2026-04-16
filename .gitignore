@@ -1,0 +1,41 @@
+# Terraform
+terraform/.terraform/
+terraform/terraform.tfstate
+terraform/terraform.tfstate.backup
+terraform/.terraform.lock.hcl
+terraform/terraform.tfvars
+terraform/*.tfplan
+
+# Node / API
+api/node_modules/
+node_modules/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+scripts/*.egg-info/
+
+# Azure / Secrets
+*.env
+.env.local
+*.pem
+*.key
+api/local.settings.json
+
+# Local dev server (not used by Azure Functions)
+api/server.js
+
+# OS
+.DS_Store
+Thumbs.db
+
+# IDE
+.vscode/
+.idea/
+
+# Data files — never commit
+*.csv
+*.xlsx
+*.xls
